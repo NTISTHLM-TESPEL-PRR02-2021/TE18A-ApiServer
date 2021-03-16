@@ -23,7 +23,7 @@ namespace ApiServer.Controllers
     [HttpPost()]
     public ActionResult Post(Pokemon pokemon)
     {
-      // pokemons.Add(pokemon)
+      pokemons.Add(pokemon);
       Console.WriteLine("String: " + pokemon.Name);
 
       return Ok();
